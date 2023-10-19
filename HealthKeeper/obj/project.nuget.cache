@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "IfsQJ526l/Iz979b2KCJJKWfRGERwdpaWnsTdn2+Ad/TjQ0M0JwGKiEPOi9NPWQssyH9B/Wb0OeS2Yc4p0SqvA==",
+  "dgSpecHash": "ATHeAwuhUPt9d5CLRAc1cDOkILo/TtANRtPMQiumlG2/GZm2h0TeTyx3XTAvzLyeFOQa1C30Ylv5aPyaolo9OA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Christiane\\Desktop\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\HealthKeeper.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\katya\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\katya\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\katya\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
+    "C:\\Users\\katya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
+  ],
   "logs": []
 }

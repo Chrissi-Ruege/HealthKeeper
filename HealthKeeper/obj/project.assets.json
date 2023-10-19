@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Christiane\\.nuget\\packages\\": {}
+    "C:\\Users\\katya\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Christiane\\Desktop\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
+      "projectUniqueName": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\HealthKeeper.csproj",
       "projectName": "HealthKeeper",
-      "projectPath": "C:\\Users\\Christiane\\Desktop\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
-      "packagesPath": "C:\\Users\\Christiane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Christiane\\Desktop\\HealthKeeper\\HealthKeeper\\obj\\",
+      "projectPath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\HealthKeeper.csproj",
+      "packagesPath": "C:\\Users\\katya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Christiane\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\katya\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -54,6 +54,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.23, 6.0.23]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -62,7 +80,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.413\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

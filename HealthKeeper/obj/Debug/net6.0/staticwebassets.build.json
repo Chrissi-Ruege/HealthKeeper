@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KfSCBI2RzXzMDv5/sV8G+mrfn42T53uQhNGIRgOBgZ8=",
+  "Hash": "GP8qBqFT66kdEf8dttFqI8kYgAA01g6BYjjeuT+8W0A=",
   "Source": "HealthKeeper",
   "BasePath": "_content/HealthKeeper",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\css\\statistics.css",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "css/statistics.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\statistics.css"
     },
     {
       "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\favicon.ico",

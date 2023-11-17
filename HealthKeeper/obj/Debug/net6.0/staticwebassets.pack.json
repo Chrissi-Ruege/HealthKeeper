@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\css\\statistics.css",
+      "PackagePath": "staticwebassets\\css\\statistics.css"
+    },
+    {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },

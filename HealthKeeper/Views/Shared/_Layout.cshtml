@@ -1,43 +1,34 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HealthKeeper</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/HealthKeeper.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/navbar.css"/>
+    <script src="~/js/navbar.js" defer></script>
+
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="background-color: rgba(161, 160, 255, 0.50);">
-            <div class="container-fluid">
-
-                <a class="navbar-brand fs-4" asp-area="" asp-controller="Home" asp-action="Index">HealthKeeper</a>
-
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fs-5 px-4" asp-area="" asp-controller="Home" asp-action="Index">
-                                <img src="fi-rr-apps.png" width="34" height="34" class="d-inline-block align-top" alt="Bild kann nicht geladen werden">
-                                Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fs-5 px-4" asp-area="" asp-controller="Home" asp-action="Index">Statistic</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fs-5 px-4" asp-area="" asp-controller="Home" asp-action="Index">Calender</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fs-5 px-4" asp-area="" asp-controller="Home" asp-action="Index">Sport</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fs-5 px-4" asp-area="" asp-controller="Home" asp-action="Index">Food Journal</a>
-                        </li>
-                    </ul>
-                </div>
-
+        <nav class="navbar">
+            <div class="navbar__logo">
+                <a href="">HealthKeeper</a>
             </div>
+            <ul class="navbar__menu">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Statistic</a></li>
+                <li><a href="#">Calender</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Food Journal</a></li>
+            </ul>
+            <ul class="navbar__icons">
+                <li><img class="imgsize" href="#" src="~/images/fi-rr-user.png" /></li>
+            </ul>
+            <a href="#" class="navbar__toggleBtn">
+                <img class="imgsize" href="#" src="~/images/material-symbols_menu.png" ></img>
+            </a>
         </nav>
     </header>
     <div class="container">
@@ -46,8 +37,8 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    <footer>
+        <div style="text-align: center;">
             &copy; 2023 - HealthKeeper - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
@@ -56,4 +47,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

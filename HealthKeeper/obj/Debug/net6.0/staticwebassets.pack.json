@@ -5,12 +5,28 @@
       "PackagePath": "staticwebassets\\HealthKeeper.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\css\\navbar.css",
+      "PackagePath": "staticwebassets\\css\\navbar.css"
+    },
+    {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\images\\fi-rr-user.png",
+      "PackagePath": "staticwebassets\\images\\fi-rr-user.png"
+    },
+    {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\images\\material-symbols_menu.png",
+      "PackagePath": "staticwebassets\\images\\material-symbols_menu.png"
+    },
+    {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\js\\navbar.js",
+      "PackagePath": "staticwebassets\\js\\navbar.js"
     },
     {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\wwwroot\\js\\site.js",

@@ -1,0 +1,27 @@
+<script src="HealthKeeper\wwwroot\js\statistics.js"></script>
+<div class="grid-container">
+    <div class="left">
+        <div class="bmicalc">
+            <form id="BmiCalculator">
+                <h1 class="answer mnone">BMI-Berechnung:</h1>
+                <label class="bmilabel">Größe (cm):</label><br>
+                <input class="bmiinput" type="number" id="height" name="height"><br>
+                <label class="bmilabel">Gewicht (kg):</label><br>
+                <input class="bmiinput" type="number" id="weight" name="weight"><br><br>
+                <input class="bmibutton bw" type="submit" value="BMI berechnen">
+                <h1 class="answer">BMI beträgt:</h1>
+                <input type="text" id="result" name="result" readonly><br>
+            </form>
+        </div>
+    </div>
+    <div class="right">
+        <canvas id="graph"></canvas>
+        <div class="userinputweight">
+            <form id="WeightUserInput">
+                <label class="bmilabel mright">Gewicht eingeben:</label>
+                <input class="bmiinput mright" type="number" id="todaysweight" name="todaysweight">
+                <input class="bmibutton" type="submit" value="Speichern">
+            </form>
+        </div>
+    </div>
+</div>

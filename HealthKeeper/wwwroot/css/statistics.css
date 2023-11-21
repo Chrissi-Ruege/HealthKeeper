@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bmicalc {
+    border-radius: 20px;
+    width: max-content;
+}
+
+.userinputweight {
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.bmilabel {
+    font-size: 22px;
+    font-family: "Source Sans Pro";
+}
+
+.bmiinput {
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.bmibutton {
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgba(161, 160, 255, 0.331);
+    padding: 5px;
+    font-family: "Source Sans Pro";
+}
+
+.bw {
+    width: 100%;
+}
+
+.answer {
+    font-size: 25px;
+}
+
+.mnone {
+    margin-top: 0px;
+}
+
+.bmi {
+    font-size: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: auto 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.left {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
+.right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+canvas {
+    flex: 1;
+    border: 1px solid #000;
+}
+
+
+form {
+    margin-bottom: 20px;
+}
+
+.mright {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto; 
+    }
+
+    .left, .right {
+        grid-column: auto;
+        grid-row: auto;
+        margin-bottom: 20px; 
+    }
+}

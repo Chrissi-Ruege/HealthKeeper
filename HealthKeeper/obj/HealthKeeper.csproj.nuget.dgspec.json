@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\HealthKeeper.csproj": {}
   },
   "projects": {
@@ -15,11 +16,29 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\katya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
+        "projectName": "HealthKeeper",
+        "projectPath": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
+        "packagesPath": "C:\\Users\\ruegech\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ruegech\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+>>>>>>> origin/Chrissi
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,7 +75,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> origin/Chrissi
         }
       }
     }

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "CsQ+dfwY/DGFK5dDyKEWaIC0Qn187vUv5i5Gs6HgO4tD0cxNaXnXIexgg836hClqUhR4nA5XJfrBp0Ge9ntoZw==",
   "success": true,
   "projectFilePath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\HealthyKeeper\\GITrepos\\HealthKeeper\\HealthKeeper.csproj",
+=======
+  "dgSpecHash": "8gzRamGAVpkuS0mPGoxCtoCY1T3D16/GkDsxG54HTxnN5Lqofs7zomx48PgdBA7KybXwCsdBOrmAJzaQgMx2Sw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
+>>>>>>> origin/Chrissi
   "expectedPackageFiles": [],
   "logs": []
 }

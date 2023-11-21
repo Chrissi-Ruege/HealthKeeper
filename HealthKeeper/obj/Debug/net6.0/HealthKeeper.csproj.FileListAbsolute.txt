@@ -28,3 +28,37 @@ C:\Users\katya\OneDrive\Рабочий стол\HealthyKeeper\GITrepos\HealthKee
 C:\Users\katya\OneDrive\Рабочий стол\HealthyKeeper\GITrepos\HealthKeeper\obj\Debug\net6.0\HealthKeeper.pdb
 C:\Users\katya\OneDrive\Рабочий стол\HealthyKeeper\GITrepos\HealthKeeper\obj\Debug\net6.0\HealthKeeper.genruntimeconfig.cache
 C:\Users\katya\OneDrive\Рабочий стол\HealthyKeeper\GITrepos\HealthKeeper\obj\Debug\net6.0\ref\HealthKeeper.dll
+<<<<<<< HEAD
+=======
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\appsettings.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.staticwebassets.runtime.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.exe
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.deps.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.runtimeconfig.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.dll
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\bin\Debug\net6.0\HealthKeeper.pdb
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.csproj.AssemblyReference.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfoInputs.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfo.cs
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.csproj.CoreCompileInputs.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cs
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.HealthKeeper.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.build.HealthKeeper.props
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HealthKeeper.props
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HealthKeeper.props
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\scopedcss\bundle\HealthKeeper.styles.css
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\scopedcss\projectbundle\HealthKeeper.bundle.scp.css
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.dll
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\refint\HealthKeeper.dll
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.pdb
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.genruntimeconfig.cache
+C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\ref\HealthKeeper.dll
+>>>>>>> origin/Chrissi

@@ -62,3 +62,33 @@ C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\Heal
 C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\HealthKeeper.genruntimeconfig.cache
 C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\obj\Debug\net6.0\ref\HealthKeeper.dll
 >>>>>>> origin/Chrissi
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfoInputs.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfo.cs
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.csproj.CoreCompileInputs.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cs
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.HealthKeeper.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.build.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.dll
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\refint\HealthKeeper.dll
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.pdb
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfoInputs.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.AssemblyInfo.cs
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.csproj.CoreCompileInputs.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cache
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.RazorAssemblyInfo.cs
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.HealthKeeper.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.build.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.HealthKeeper.props
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.dll
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\refint\HealthKeeper.dll
+C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\obj\Debug\net6.0\HealthKeeper.pdb

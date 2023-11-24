@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "JcHu2d2n5UqO+UkODc8bk3XXskPvm/NloMn2LC+Z98g=",
+  "Hash": "tFbWjOOdSzA8t6AiQUqxhqRe/B1dhnjs73vUqJyXpF4=",
   "Source": "HealthKeeper",
   "BasePath": "_content/HealthKeeper",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HealthKeeper.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\login.css",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
+    },
+    {
       "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\navbar.css",
       "SourceId": "HealthKeeper",
       "SourceType": "Discovered",
@@ -83,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\statistics.css",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "css/statistics.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\statistics.css"
     },
     {
       "Identity": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\favicon.ico",

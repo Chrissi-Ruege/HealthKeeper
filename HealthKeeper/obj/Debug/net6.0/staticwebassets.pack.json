@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\HealthKeeper.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
     {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\css\\statistics.css",
+      "PackagePath": "staticwebassets\\css\\statistics.css"
     },
     {
       "Id": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\wwwroot\\favicon.ico",

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\HealthKeeper.csproj": {}
+    "C:\\Users\\lukas\\Desktop\\Uni\\3.Theoriesemester\\Software Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\HealthKeeper.csproj": {
+    "C:\\Users\\lukas\\Desktop\\Uni\\3.Theoriesemester\\Software Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\HealthKeeper.csproj",
+        "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Uni\\3.Theoriesemester\\Software Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
         "projectName": "HealthKeeper",
-        "projectPath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\HealthKeeper.csproj",
-        "packagesPath": "C:\\Users\\katya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katya\\OneDrive\\Рабочий стол\\healthkeeper_neu\\GIT\\HealthKeeper\\obj\\",
+        "projectPath": "C:\\Users\\lukas\\Desktop\\Uni\\3.Theoriesemester\\Software Engineering\\HealthKeeper\\HealthKeeper\\HealthKeeper.csproj",
+        "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukas\\Desktop\\Uni\\3.Theoriesemester\\Software Engineering\\HealthKeeper\\HealthKeeper\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\katya\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -48,6 +48,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.23, 6.0.23]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

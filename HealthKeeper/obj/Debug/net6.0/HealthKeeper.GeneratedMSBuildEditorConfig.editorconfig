@@ -9,45 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HealthKeeper
 build_property.RootNamespace = HealthKeeper
-build_property.ProjectDir = C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper\
+build_property.ProjectDir = C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\katya\OneDrive\Рабочий стол\healthkeeper_neu\GIT\HealthKeeper
+build_property.MSBuildProjectDirectory = C:\Users\ruegech\Documents\DHBW\Semester3\Software_Engineering\HealthKeeper\HealthKeeper
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Home/Index.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Calender/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FsZW5kZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Food/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9vZFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Login/Login.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Login/Register.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Login/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Shared/Error.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Statistics/Index.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Sport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3BvcnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Statistics/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhdGlzdGljc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/_ViewImports.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/_ViewStart.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katya/OneDrive/Рабочий стол/healthkeeper_neu/GIT/HealthKeeper/Views/Shared/_Layout.cshtml]
+[C:/Users/ruegech/Documents/DHBW/Semester3/Software_Engineering/HealthKeeper/HealthKeeper/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xt9r34vzwq

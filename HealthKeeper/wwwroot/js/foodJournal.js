@@ -21,19 +21,19 @@ function showNextDay() {
     // Hier Logik hinzufügen, um die Inhalte für den nächsten Tag zu laden
 }
 
-function toggleInput() {
-    const inputContainer = document.getElementById('inputContainer');
+function toggleInput(parentDiv) {
+    const inputContainer = document.getElementById(`${parentDiv}InputContainer`);
     inputContainer.classList.toggle('show');
 }
 
-function addBreakfast() {
-    const breakfastInput = document.getElementById('breakfastInput').value;
-    if (breakfastInput.trim() !== '') {
-        const breakfastList = document.getElementById('breakfastList');
-        const newBreakfast = document.createElement('li');
-        newBreakfast.textContent = breakfastInput;
-        breakfastList.appendChild(newBreakfast);
-        document.getElementById('breakfastInput').value = '';
+function addFood(parentDiv) {
+    const foodInput = document.getElementById(`${parentDiv}Input`).value;
+    if (foodInput.trim() !== '') {
+        const foodList = document.getElementById(`${parentDiv}List`);
+        const newFood = document.createElement('li');
+        newFood.textContent = foodInput;
+        foodList.appendChild(newFood);
+        document.getElementById(`${parentDiv}Input`).value = '';
     } else {
         alert('Bitte geben Sie einen Wert ein.');
     }

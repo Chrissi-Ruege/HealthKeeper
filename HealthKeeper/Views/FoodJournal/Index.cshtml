@@ -16,13 +16,11 @@
             <li>Orangensaft</li>
             <!-- Hier kommen die Frühstücksdetails für den ausgewählten Tag -->
         </ul>
-        <button class="addFoodBtn" onclick="toggleInput()">Frühstück Hinzufügen</button>
-
-    </div>
-
-    <div id="inputContainer" class="input-container">
-        <input type="text" id="breakfastInput" placeholder="Frühstück eingeben...">
-        <button onclick="addBreakfast()">Hinzufügen</button>
+        <button class="addFoodBtn" onclick="toggleInput('breakfast')">Frühstück Hinzufügen</button>
+        <div id="breakfastInputContainer" class="input-container">
+            <input type="text" id="breakfastInput" placeholder="Frühstück eingeben...">
+            <button onclick="addFood('breakfast')">Hinzufügen</button>
+        </div>
     </div>
 
     <div id="lunch" class="section">
@@ -31,23 +29,37 @@
             <li>Hühnchen mit Reis</li>
             <!-- Hier kommen die Mittagessendetails für den ausgewählten Tag -->
         </ul>
-        <button class="addFoodBtn" onclick="toggleInput()">Mittagessen Hinzufügen</button>
+        <button class="addFoodBtn" onclick="toggleInput('lunch')">Mittagessen Hinzufügen</button>
+        <div id="lunchInputContainer" class="input-container">
+            <input type="text" id="lunchInput" placeholder="Mittagessen eingeben...">
+            <button onclick="addFood('lunch')">Hinzufügen</button>
+        </div>
     </div>
+
     <div id="dinner" class="section">
         <h2>Abendessen - {kcal, Macronährstoffe ...}</h2>
         <ul class="foodList"  id="dinnerList">
             <li>Spaghetti Bolognese</li>
             <!-- Hier kommen die Abendessendetails für den ausgewählten Tag -->
         </ul>
-        <button class="addFoodBtn" onclick="toggleInput()">Abendessen Hinzufügen</button>
+        <button class="addFoodBtn" onclick="toggleInput('dinner')">Abendessen Hinzufügen</button>
+        <div id="dinnerInputContainer" class="input-container">
+            <input type="text" id="dinnerInput" placeholder="Abendessen eingeben...">
+            <button onclick="addFood('dinner')">Hinzufügen</button>
+        </div>
     </div>
+
     <div id="snacks" class="section">
         <h2>Snacks - {kcal, Macronährstoffe ...}</h2>
-        <ul class="foodList"  id="snackList">
+        <ul class="foodList"  id="snacksList">
             <li>Erdnüsse</li>
             <!-- Hier kommen die Details zu den Snacks für den ausgewählten Tag -->
         </ul>
-        <button class="addFoodBtn" onclick="toggleInput()">Snacks Hinzufügen</button>
+        <button class="addFoodBtn" onclick="toggleInput('snacks')">Snacks Hinzufügen</button>
+        <div id="snacksInputContainer" class="input-container">
+            <input type="text" id="snacksInput" placeholder="Snacks eingeben...">
+            <button onclick="addFood('snacks')">Hinzufügen</button>
+        </div>
     </div>
 </div>
 

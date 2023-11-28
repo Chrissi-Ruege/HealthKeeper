@@ -2,7 +2,7 @@ let currentDate = new Date();
 
 window.onload = () => {
     updateDateDisplay();
-};
+}
 
 function updateDateDisplay() {
     const dateElement = document.getElementById('currentDate');
@@ -12,13 +12,13 @@ function updateDateDisplay() {
 function showPreviousDay() {
     currentDate.setDate(currentDate.getDate() - 1);
     updateDateDisplay();
-    // Hier Logik hinzufügen, um die Inhalte für den vorherigen Tag zu laden
+    // Hier Logik hinzufügen, um die Datenbankinhalte für den vorherigen Tag zu laden
 }
 
 function showNextDay() {
     currentDate.setDate(currentDate.getDate() + 1);
     updateDateDisplay();
-    // Hier Logik hinzufügen, um die Inhalte für den nächsten Tag zu laden
+    // Hier Logik hinzufügen, um die Datenbankinhalte für den nächsten Tag zu laden
 }
 
 function toggleInput(parentDiv) {

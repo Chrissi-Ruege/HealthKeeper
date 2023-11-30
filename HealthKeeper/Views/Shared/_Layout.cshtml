@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HealthKeeper</title>
     <link rel="stylesheet" href="~/css/navbar.css"/>
+<<<<<<< HEAD
     <link rel="stylesheet" href="~/css/statistics.css"/>
     <link rel="stylesheet" href="~/css/login.css"/>
+=======
+>>>>>>> e960815e024c86f49a413764f1f118c0cff15784
     <script src="~/js/navbar.js" defer></script>
 
 </head>
@@ -19,14 +22,14 @@
                 <a href="">HealthKeeper</a>
             </div>
             <ul class="navbar__menu">
-                <li><a href="#">Dashboard</a></li>
+                <li><a asp-controller="Home">Dashboard</a></li>
                 <li><a asp-controller="Statistics">Statistic</a></li>
-                <li><a href="#">Calender</a></li>
-                <li><a href="#">Sport</a></li>
-                <li><a href="#">Food Journal</a></li>
+                <li><a asp-controller="Calender">Calender</a></li>
+                <li><a asp-controller="Sport">Sport</a></li>
+                <li><a asp-controller="Food">Food Journal</a></li>
             </ul>
             <ul class="navbar__icons">
-                <li><img class="imgsize" href="#" src="~/images/fi-rr-user.png" /></li>
+                <li><a asp-controller="Login"><img class="imgsize" src="~/images/fi-rr-user.png" /></a></li>
             </ul>
             <a href="#" class="navbar__toggleBtn">
                 <img class="imgsize" href="#" src="~/images/material-symbols_menu.png" ></img>

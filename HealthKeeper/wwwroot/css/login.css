@@ -1,0 +1,88 @@
+  
+  /* Basic styling */
+  .divlogin {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    background-color: #fff;
+    padding: 30px 60px 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 90%;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-grouplogin {
+    margin-bottom: 15px;
+  }
+  
+  .labellogin {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+  }
+
+  .a_extra{
+    font-size: 14px;
+    opacity: 50%;
+    font-family: "Source Sans Pro";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .inputlogin[type="text"],
+  .inputlogin[type="password"] {
+    padding:8px 0px 8px 0px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  .buttonlogin {
+    padding: 15px 0px 15px 0px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(161, 160, 255);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .buttonlogin:hover {
+    background-color: rgba(86, 85, 169, 0.977);
+  }
+  
+  .center{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Source Sans Pro";
+    margin-top: 10px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .login-container {
+      width: 90%;
+    }
+  }

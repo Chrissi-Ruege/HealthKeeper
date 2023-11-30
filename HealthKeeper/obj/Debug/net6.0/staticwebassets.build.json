@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "j+b7N04gkG1A+jsW+/IDSGF32Jf2ohslqP0WbCc0kn4=",
+  "Hash": "LV0AS+BaId98jURS1vO6kaDpIeozeN8PSzHSJgc4hkM=",
   "Source": "HealthKeeper",
   "BasePath": "_content/HealthKeeper",
   "Mode": "Default",
@@ -49,6 +49,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\HealthKeeper.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\foodJournal.css",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "css/foodJournal.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\foodJournal.css"
+    },
+    {
+      "Identity": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\login.css",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\navbar.css",
@@ -151,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\material-symbols_menu.png"
+    },
+    {
+      "Identity": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\js\\foodJournal.js",
+      "SourceId": "HealthKeeper",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\",
+      "BasePath": "_content/HealthKeeper",
+      "RelativePath": "js/foodJournal.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\foodJournal.js"
     },
     {
       "Identity": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\js\\navbar.js",

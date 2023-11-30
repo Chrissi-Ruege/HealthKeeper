@@ -6,6 +6,6 @@ public class LoginController:Controller{
         return View("Login");
     }
     public ActionResult Register(){
-        return View("Register");
+        return View();
     }
 }

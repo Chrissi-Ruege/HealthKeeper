@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\HealthKeeper.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\foodJournal.css",
+      "PackagePath": "staticwebassets\\css\\foodJournal.css"
+    },
+    {
+      "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
       "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\css\\navbar.css",
       "PackagePath": "staticwebassets\\css\\navbar.css"
     },
@@ -27,6 +35,10 @@
     {
       "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\images\\material-symbols_menu.png",
       "PackagePath": "staticwebassets\\images\\material-symbols_menu.png"
+    },
+    {
+      "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\js\\foodJournal.js",
+      "PackagePath": "staticwebassets\\js\\foodJournal.js"
     },
     {
       "Id": "C:\\Users\\ruegech\\Documents\\DHBW\\Semester3\\Software_Engineering\\HealthKeeper\\HealthKeeper\\wwwroot\\js\\navbar.js",

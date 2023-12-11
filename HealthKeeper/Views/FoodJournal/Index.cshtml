@@ -7,61 +7,134 @@
     <h2>Mein Food Journal</h2>
 </header>
 <div class="flex-container">
-    <div class="day-selector">
-        <button class="daySwitcherButton" onclick="showPreviousDay()">Vorheriger Tag</button>
+    <div class="date-container">
+        <button onclick="showPreviousDay()">&#60;</button>
         <span id="currentDate"></span>
-        <button class="daySwitcherButton" onclick="showNextDay()">Nächster Tag</button>
+        <button onclick="showNextDay()">&#62;</button>
     </div>
+
     <div id="breakfast" class="section">
-        <h3>Frühstück - {kcal, Macronährstoffe ...}</h3>
-        <ul id="breakfastList" class="foodList">
-            <li>Müsli mit Obst</li>
-            <li>Orangensaft</li>
-            <!-- Hier kommen die Frühstücksdetails für den ausgewählten Tag -->
-        </ul>
-        <button class="addFoodBtn" onclick="toggleInput('breakfast')">Frühstück Hinzufügen</button>
+        <h3>Frühstück</h3>
+        <ul id="breakfastList" class="foodList"></ul>
+        <div class="arrow-container" onclick="toggleInput('breakfast')">
+            <span class="arrow" id="breakfastArrow"> &gt; </span>
+            <span>Frühstück hinzufügen</span>
+        </div>
         <div id="breakfastInputContainer" class="input-container">
-            <input type="text" id="breakfastInput" placeholder="Frühstück eingeben...">
-            <button onclick="addFood('breakfast')">Hinzufügen</button>
+            <div class="inputFoodName">
+                <label for="breakfastName">Wie lautet der Name des Frühstücks?</label>
+                <input type="text" id="breakfastName" placeholder="Frühstück">
+            </div>
+            <div class="inputPortionSize">
+                <label for="breakfastPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g)?</label>
+                <input type="text" id="breakfastPortionSize" placeholder="Portionsgröße">
+            </div>
+            <div class="inputNutrients">
+                <p class="nutrients">Nährwerte vom Frühstücks pro 100g:</p>
+                <label for="breakfastKcal">Kcal:</label>
+                <input type="text" id="breakfastKcal" placeholder="Kcal/100g">
+                <label for="breakfastFat">Fette:</label>
+                <input type="text" id="breakfastFat" placeholder="Fette/100g">
+                <label for="breakfastCarbs">Kohlenhydrate:</label>
+                <input type="text" id="breakfastCarbs" placeholder="Kohlenhydrate/100g">
+                <label for="breakfastProtein">Proteine:</label>
+                <input type="text" id="breakfastProtein" placeholder="Proteine/100g">
+            </div>
+            <button class="addFoodBtn" onclick="addFood('breakfast')">Hinzufügen</button>
         </div>
     </div>
 
     <div id="lunch" class="section">
-        <h3>Mittagessen - {kcal, Macronährstoffe ...}</h3>
-        <ul id="lunchList" class="foodList">
-            <li>Hühnchen mit Reis</li>
-            <!-- Hier kommen die Mittagessendetails für den ausgewählten Tag -->
-        </ul>
-        <button class="addFoodBtn" onclick="toggleInput('lunch')">Mittagessen Hinzufügen</button>
+        <h3>Mittagessen</h3>
+        <ul id="lunchList" class="foodList"></ul>
+        <div class="arrow-container" onclick="toggleInput('lunch')">
+            <span class="arrow" id="lunchArrow"> &gt; </span>
+            <span>Mittagessen hinzufügen</span>
+        </div>
         <div id="lunchInputContainer" class="input-container">
-            <input type="text" id="lunchInput" placeholder="Mittagessen eingeben...">
-            <button onclick="addFood('lunch')">Hinzufügen</button>
+            <div class="inputFoodName">
+                <label for="lunchName">Wie lautet der Name des Mittagessens?</label>
+                <input type="text" id="lunchName" placeholder="Mittagessen">
+            </div>
+            <div class="inputPortionSize">
+                <label for="lunchPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g)?</label>
+                <input type="text" id="lunchPortionSize" placeholder="Portionsgröße">
+            </div>
+            <div class="inputNutrients">
+                <p class="nutrients">Nährwerte vom Mittagessen pro 100g:</p>
+                <label for="lunchKcal">Kcal:</label>
+                <input type="text" id="lunchKcal" placeholder="Kcal/100g">
+                <label for="lunchFat">Fette:</label>
+                <input type="text" id="lunchFat" placeholder="Fette/100g">
+                <label for="lunchCarbs">Kohlenhydrate:</label>
+                <input type="text" id="lunchCarbs" placeholder="Kohlenhydrate/100g">
+                <label for="lunchProtein">Proteine:</label>
+                <input type="text" id="lunchProtein" placeholder="Proteine/100g">
+            </div>
+            <button class="addFoodBtn" onclick="addFood('lunch')">Hinzufügen</button>
         </div>
     </div>
 
     <div id="dinner" class="section">
-        <h3>Abendessen - {kcal, Macronährstoffe ...}</h3>
-        <ul id="dinnerList" class="foodList">
-            <li>Spaghetti Bolognese</li>
-            <!-- Hier kommen die Abendessendetails für den ausgewählten Tag -->
-        </ul>
-        <button class="addFoodBtn" onclick="toggleInput('dinner')">Abendessen Hinzufügen</button>
+        <h3>Abendessen</h3>
+        <ul id="dinnerList" class="foodList"></ul>
+        <div class="arrow-container" onclick="toggleInput('dinner')">
+            <span class="arrow" id="dinnerArrow"> &gt; </span>
+            <span>Abendessen hinzufügen</span>
+        </div>
         <div id="dinnerInputContainer" class="input-container">
-            <input type="text" id="dinnerInput" placeholder="Abendessen eingeben...">
-            <button onclick="addFood('dinner')">Hinzufügen</button>
+
+            <div class="inputFoodName">
+                <label for="dinnerName">Wie lautet der Name des Abendessens?</label>
+                <input type="text" id="dinnerName" placeholder="Abendessen">
+            </div>
+            <div class="inputPortionSize">
+                <label for="dinnerPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g)?</label>
+                <input type="text" id="dinnerPortionSize" placeholder="Portionsgröße">
+            </div>
+            <div class="inputNutrients">
+                <p class="nutrients">Nährwerte vom Abendessen pro 100g:</p>
+                <label for="dinnerKcal">Kcal:</label>
+                <input type="text" id="dinnerKcal" placeholder="Kcal/100g">
+                <label for="dinnerFat">Fette:</label>
+                <input type="text" id="dinnerFat" placeholder="Fette/100g">
+                <label for="dinnerCarbs">Kohlenhydrate:</label>
+                <input type="text" id="dinnerCarbs" placeholder="Kohlenhydrate/100g">
+                <label for="dinnerProtein">Proteine:</label>
+                <input type="text" id="dinnerProtein" placeholder="Proteine/100g">
+            </div>
+            <button class="addFoodBtn" onclick="addFood('dinner')">Hinzufügen</button>
         </div>
     </div>
 
     <div id="snacks" class="section">
-        <h3>Snacks - {kcal, Macronährstoffe ...}</h3>
-        <ul id="snacksList" class="foodList">
-            <li>Erdnüsse</li>
-            <!-- Hier kommen die Details zu den Snacks für den ausgewählten Tag -->
-        </ul>
-        <button class="addFoodBtn" onclick="toggleInput('snacks')">Snacks Hinzufügen</button>
+        <h3>Snacks</h3>
+        <ul id="snacksList" class="foodList"></ul>
+        <div class="arrow-container" onclick="toggleInput('snacks')">
+            <span class="arrow" id="snacksArrow"> &gt; </span>
+            <span>Snack hinzufügen</span>
+        </div>
         <div id="snacksInputContainer" class="input-container">
-            <input type="text" id="snacksInput" placeholder="Snacks eingeben...">
-            <button onclick="addFood('snacks')">Hinzufügen</button>
+            <div class="inputFoodName">
+                <label for="snacksName">Wie lautet der Name des Snacks?</label>
+                <input type="text" id="snacksName" placeholder="Snack">
+            </div>
+            <div class="inputPortionSize">
+                <label for="snacksPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g)?</label>
+                <input type="text" id="snacksPortionSize" placeholder="Portionsgröße">
+            </div>
+            <div class="inputNutrients">
+                <p class="nutrients">Nährwerte des Snacks pro 100g:</p>
+                <label for="snacksKcal">Kcal:</label>
+                <input type="text" id="snacksKcal" placeholder="Kcal/100g">
+                <label for="snacksFat">Fette:</label>
+                <input type="text" id="snacksFat" placeholder="Fette/100g">
+                <label for="snacksCarbs">Kohlenhydrate:</label>
+                <input type="text" id="snacksCarbs" placeholder="Kohlenhydrate/100g">
+                <label for="snacksProtein">Proteine:</label>
+                <input type="text" id="snacksProtein" placeholder="Proteine/100g">
+            </div>
+            <button class="addFoodBtn" onclick="addFood('snacks')">Hinzufügen</button>
         </div>
     </div>
 </div>

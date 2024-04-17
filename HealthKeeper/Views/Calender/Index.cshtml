@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="~/css/calender.css"/>
+<script src="~/js/calender.js" defer></script>
+
+<body>
+  <div class="calendar">
+    <div class="header">
+      <button class="bmonth" id="prevMonth">&#8249;</button>
+      <h2 id="monthYear"></h2>
+      <button class="bmonth" id="nextMonth">&#8250;</button>
+    </div>
+    <div class="weekdays">
+      <div>So</div>
+      <div>Mo</div>
+      <div>Di</div>
+      <div>Mi</div>
+      <div>Do</div>
+      <div>Fr</div>
+      <div>Sa</div>
+    </div>
+    <div class="days" id="calendarDays"></div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 class="labelcalender" id="modalDate"></h3>
+      <input class="inputcalender" type="text" id="eventInput" placeholder="Enter event">
+      <button class="buttonlogin" id="saveBtn">Save</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+

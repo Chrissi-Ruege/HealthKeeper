@@ -1,8 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
 namespace HealthKeeper.Controllers;
 
-public class LoginController:Controller{
-    public ActionResult Index(){
+public class LoginController : Controller
+{
+
+    private DatabaseContext _ctx;
+
+    public LoginController(DatabaseContext ctx)
+    {
+        _ctx = ctx;
+    }
+
+    public ActionResult Index()
+    {
         return View();
     }
 }

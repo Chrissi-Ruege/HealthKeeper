@@ -1,6 +1,6 @@
 header {
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: "Arial";
 }
 
 .flex-container {
@@ -8,66 +8,158 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: "Source Sans Pro";
+    font-family: "Arial";
+    font-size: 18px;
     margin-top: 20px;
 }
 
-.day-selector {
+.date-container {
+    display: flex;
+    width: 250px;
     background-color: #f5f5f5;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 5px;
     align-items: center;
-    text-align: center;
-    font-family: "Source Sans Pro";
+    justify-content: space-between;
 }
 
-.daySwitcherButton {
-    border-radius: 5px;
+.date-container button {
     background-color: rgba(161, 160, 255, 0.331);
-    padding: 5px;
-    font-family: "Source Sans Pro";
+    border-radius: 20px;
+    font-size: 20px;
 }
 
 .input-container {
-    display: none;
-    margin-top: 10px;
+    visibility: hidden;
+    display: block;
+    max-height: 0px;
+    opacity: 0;
+    padding: 0px;
+    margin: 0px;
+    transition: all 0.5s ease;
 }
 
 .show {
-    display: block !important;
+    visibility: visible;
+    opacity: 1;
+    max-height: 200px;
+    padding: 5px;
+}
+
+.arrow-container {
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: rgba(161, 160, 255, 0.331);
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: default;
+    display: inline-block;
+}
+
+.arrow {
+    display: inline-block;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+.inputFood {
+    display: block;
+    padding: 5px;
+}
+
+.nutrients {
+    display: block;
+    margin: 0px;
+    padding: 5px;
+}
+
+.inputNutrients {
+    display: block;
+    padding-bottom: 10px;
 }
 
 .addFoodBtn {
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(161, 160, 255, 0.331);
     padding: 5px;
-    font-family: "Source Sans Pro";
 }
 
 .section {
+    background-color: #f5f5f5;
     width: 80%;
-    margin-top: 20px;
-    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
-.section h2 {
-    background-color: #f5f5f5;
-    padding: 5px;
-    border-radius: 3px;
+.section h3 {
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    border-radius: 5px;
 }
 
 .foodList {
     list-style: none;
-    padding: 0;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.upper-part,
+.lower-part {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.icons {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.edit-icon,
+.delete-icon {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.list-item:hover .icons {
+    display: block;
 }
 
 .foodList li {
-    border-bottom: 1px solid #ccc;
-    padding: 8px 0;
+    border-top: 1px solid #ccc;
+    padding: 10px;
 }
 
 .foodList li:last-child {
-    border-bottom: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
 }

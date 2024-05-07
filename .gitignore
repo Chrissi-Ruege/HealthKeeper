@@ -4,6 +4,10 @@
 
 # .Net 6 files
 bin/Debug/net6.0/
+bin/**
+**/bin/**
+obj/**
+**/obj/**
 
 # User-specific files
 *.suo

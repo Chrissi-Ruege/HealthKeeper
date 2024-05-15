@@ -29,11 +29,12 @@ public class StatisticsController : Controller
         return View();
     }
 
-    [HttpGet]
-    public async Task<ActionResult<List<GetStatisticEntry>>> GetEntries(IdentityUser user)
+    [HttpGet("{limit}")]
+    public async Task<ActionResult<List<GetStatisticEntry>>> GetEntries(IdentityUser user, int limit)
     {
         var entries = await _ctx.StatsEntries
             .OrderBy(x => x.Timestamp)
+            .Take(limit)
             .Where(x => x.UserId == user.Id)
             .Select(x => Tuple.Create(x.Weight, x.Height, CalculateBMI(x.Height, x.Weight)))
             .Select(x => new GetStatisticEntry(x.Item1, x.Item2, x.Item3, BmiToText(x.Item3)))

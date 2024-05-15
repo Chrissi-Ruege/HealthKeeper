@@ -13,6 +13,7 @@ namespace HealthKeeper
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
         : base(options)
         {
+            Database.Migrate();
         }
     }
 }

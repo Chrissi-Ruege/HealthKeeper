@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HealthKeeper</title>
-    <link rel="stylesheet" href="~/css/navbar.css"/>
-    <link rel="stylesheet" href="~/css/statistics.css"/>
-    <link rel="stylesheet" href="~/css/login.css"/>
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/statistics.css" />
+    <link rel="stylesheet" href="~/css/login.css" />
     <script src="~/js/navbar.js" defer></script>
 
 </head>
@@ -19,16 +19,16 @@
                 <a href="">HealthKeeper</a>
             </div>
             <ul class="navbar__menu">
-                <li><a asp-controller="Home">Dashboard</a></li>
-                <li><a asp-controller="Statistics">Statistic</a></li>
-                <li><a asp-controller="Calender">Calender</a></li>
-                <li><a asp-controller="Food">Food Journal</a></li>
+                <li><a asp-controller="Home" asp-action="Index">Dashboard</a></li>
+                <li><a asp-controller="Statistics" asp-action="Index">Statistic</a></li>
+                <li><a asp-controller="Calender" asp-action="Index">Calender</a></li>
+                <li><a asp-controller="Food" asp-action="Index">Food Journal</a></li>
             </ul>
             <ul class="navbar__icons">
-                <li><a asp-controller="Login"><img class="imgsize" src="~/images/fi-rr-user.png" /></a></li>
+                <li><a asp-controller="Account" asp-action="Login"><img class="imgsize" src="~/images/fi-rr-user.png" /></a></li>
             </ul>
             <a href="#" class="navbar__toggleBtn">
-                <img class="imgsize" href="#" src="~/images/material-symbols_menu.png" ></img>
+                <img class="imgsize" href="#" src="~/images/material-symbols_menu.png"></img>
             </a>
         </nav>
     </header>

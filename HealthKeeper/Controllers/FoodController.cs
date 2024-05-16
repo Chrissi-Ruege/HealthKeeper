@@ -1,9 +1,15 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HealthKeeper.Controllers;
 
-public class FoodController:Controller{
-    public ActionResult Index(){
+[AllowAnonymous]
+[Route("[controller]")]
+public class FoodController : Controller
+{
+
+    public ActionResult Index()
+    {
         return View();
     }
 }

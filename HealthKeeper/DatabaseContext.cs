@@ -1,16 +1,19 @@
 ﻿using HealthKeeper.Models.Database;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HealthKeeper
 {
-    public class DatabaseContext : DbContext
+    public class DatabaseContext : IdentityDbContext<IdentityUser>
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=HealthKeeper;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False");
-        }
 
-        public DbSet<User> Users { get; set; }  
         public DbSet<StatisticEntry> StatsEntries { get; set; }
+
+        public DatabaseContext(DbContextOptions<DatabaseContext> options)
+        : base(options)
+        {
+            Database.Migrate();
+        }
     }
 }

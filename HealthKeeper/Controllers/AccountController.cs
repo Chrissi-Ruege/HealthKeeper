@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HealthKeeper.Controllers;
 
+[Authorize]
 [Route("[controller]")]
 public class AccountController : Controller
 {
@@ -15,6 +17,12 @@ public class AccountController : Controller
 
     [HttpGet("Login")]
     public ActionResult Login()
+    {
+        return View();
+    }
+
+    [HttpGet("Register")]
+    public ActionResult Register()
     {
         return View();
     }

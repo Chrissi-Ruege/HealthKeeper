@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HealthKeeper.Controllers;
 
-[AllowAnonymous]
+[Authorize]
 [Route("[controller]")]
 public class FoodController : Controller
 {

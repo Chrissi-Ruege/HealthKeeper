@@ -6,8 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HealthKeeper.Controllers;
 
-[Route("[controller]")]
 [Authorize]
+[Route("[controller]")]
 public class StatisticsController : Controller
 {
 
@@ -136,7 +136,7 @@ public class StatisticsController : Controller
 
     private async Task<StatisticEntry?> GetLatestEntry(IdentityUser user)
     {
-        return _ctx.StatsEntries
+        return  _ctx.StatsEntries
             .Where(x => x.UserId == user.Id)
             .OrderBy(x => x.Timestamp)
             .FirstOrDefault();

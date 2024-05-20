@@ -9,18 +9,18 @@ public class UserCreationModel
     [Required]
     [EmailAddress(ErrorMessage = "Gültige EMail-Adresse wird erwartet.")]
     [Display(Name = "Email-Adresse")]
-    public String Mail { get; set; }
+    public string Mail { get; set; }
 
     [StringLength(50, ErrorMessage = "Der {0} muss mindestens {2} und darf maximal {1} Zeichen enthalten", MinimumLength = 4)]
     [Display(Name = "Benutzername")]
-    public String Username { get; set; }
+    public string Username { get; set; }
 
 
     [Required]
     [StringLength(100, ErrorMessage = "Das {0} muss mindestens {2} und darf maximal {1} Zeichen enthalten.", MinimumLength = 4)]
     [DataType(DataType.Password)]
     [Display(Name = "Passwort")]
-    public String Password { get; set; }
+    public string Password { get; set; }
 
     [DataType(DataType.Password)]
     [Display(Name = "Passwort wiederholen")]

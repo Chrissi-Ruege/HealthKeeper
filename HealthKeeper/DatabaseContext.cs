@@ -9,11 +9,11 @@ namespace HealthKeeper
     {
 
         public DbSet<StatisticEntry> StatsEntries { get; set; }
+        public DbSet<FoodJournalEntry> FoodJournalEntries { get; set; }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
         : base(options)
         {
-            Database.Migrate();
         }
     }
 }

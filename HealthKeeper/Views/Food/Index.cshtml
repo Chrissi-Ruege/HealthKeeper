@@ -4,9 +4,7 @@
 <link rel="stylesheet" href="~/css/foodJournal.css"/>
 <script src="~/js/foodJournal.js"></script>
 
-<header>
-    <h2>Mein Food Journal</h2>
-</header>
+
 <div class="flex-container">
     <div class="date-container">
         <button onclick="showPreviousDay()">&#60;</button>
@@ -38,7 +36,7 @@
                 <input type="text" id="foodPortionSize" placeholder="Portionsgröße">
             </div>
             <div class="inputNutrients">
-                <p class="nutrients">Nährwerte vom Frühstücks pro 100g/100ml:</p>
+                <p class="nutrients">Nährwerte pro 100g/100ml:</p>
                 <label for="foodKcal">Kcal:</label>
                 <input type="text" id="foodKcal" placeholder="Kcal">
                 <label for="foodFat">Fette:</label>
@@ -56,7 +54,7 @@
         <h3>Frühstück</h3>
         <ul id="FrühstückListe" class="foodList"></ul>
         <div class="arrow-container" onclick="toggleInput('Frühstück')">
-            <span>Frühstück hinzufügen</span>
+            <span>Hinzufügen</span>
         </div>
     </div>
 
@@ -64,7 +62,7 @@
         <h3>Mittagessen</h3>
         <ul id="MittagessenListe" class="foodList"></ul>
         <div class="arrow-container" onclick="toggleInput('Mittagessen')">
-            <span>Mittagessen hinzufügen</span>
+            <span>Hinzufügen</span>
         </div>
     </div>
 
@@ -72,7 +70,7 @@
         <h3>Abendessen</h3>
         <ul id="AbendessenListe" class="foodList"></ul>
         <div class="arrow-container" onclick="toggleInput('Abendessen')">
-            <span>Abendessen hinzufügen</span>
+            <span>Hinzufügen</span>
         </div>
     </div>
 
@@ -80,7 +78,7 @@
         <h3>Snacks</h3>
         <ul id="SnacksListe" class="foodList"></ul>
         <div class="arrow-container" onclick="toggleInput('Snacks')">
-            <span>Snack hinzufügen</span>
+            <span>Hinzufügen</span>
         </div>
     </div>
 </div>

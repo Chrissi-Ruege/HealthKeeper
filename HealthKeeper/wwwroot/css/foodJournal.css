@@ -1,6 +1,12 @@
-header {
-    text-align: center;
-    font-family: "Arial";
+
+input, select{
+    font-family: "Source Sans Pro";
+    font-size: 18px;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: "Source Sans Pro";
 }
 
 .flex-container {
@@ -8,7 +14,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    font-family: "Arial";
+    font-family: "Source Sans Pro";
     font-size: 18px;
     margin-top: 20px;
 }
@@ -21,13 +27,16 @@ header {
     padding: 5px;
     align-items: center;
     justify-content: space-between;
+    font-family: "Source Sans Pro";
+    font-size: 28px;
 }
 
-.date-container button {
-    background-color: rgba(161, 160, 255, 0.331);
-    border-radius: 20px;
-    font-size: 20px;
-}
+    .date-container button {
+        background-color: rgba(161, 160, 255, 0.331);
+        border-radius: 5px;
+        font-size: 20px;
+        font-family: "Source Sans Pro";
+    }
 
 .input-container {
     visibility: hidden;
@@ -35,7 +44,7 @@ header {
     max-height: 0px;
     opacity: 0;
     padding: 0px;
-    margin: 0px;
+    margin: 15px;
     transition: all 0.5s ease;
 }
 
@@ -47,18 +56,21 @@ header {
 }
 
 .arrow-container {
-    border: 2px solid black;
-    border-radius: 15px;
-    background-color: rgba(161, 160, 255, 0.331);
-    padding-left: 5px;
-    padding-right: 5px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: rgb(219, 218, 255);
+    color: #000;
+    padding: 10px 5px 10px 5px;
     cursor: default;
     display: inline-block;
+    font-size: 18px;
+    font-family: "Source Sans Pro";
 }
 
 .arrow {
     display: inline-block;
     font-size: 20px;
+    font-family: "Source Sans Pro";
     transition: transform 0.3s ease;
 }
 
@@ -69,23 +81,31 @@ header {
 .inputFood {
     display: block;
     padding: 5px;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
 }
 
 .nutrients {
     display: block;
     margin: 0px;
     padding: 5px;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
 }
 
 .inputNutrients {
     display: block;
     padding-bottom: 10px;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
 }
 
 .addFoodBtn {
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: rgba(161, 160, 255, 0.331);
     padding: 5px;
+    font-family: "Source Sans Pro";
+    font-size: 18px;
 }
 
 .section {
@@ -131,6 +151,7 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-family: "Source Sans Pro";
     margin: 0px;
     padding: 0px;
 }

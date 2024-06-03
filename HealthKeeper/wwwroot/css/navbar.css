@@ -5,8 +5,8 @@
   }
   
   body {
-    margin: 0; /* 테두리 space 제거 */
-    font-family: "Source Sans Pro";
+    margin: 0;
+    font-family: "Arial";
   }
   
   a {

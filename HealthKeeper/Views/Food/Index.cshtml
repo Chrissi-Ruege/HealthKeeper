@@ -2,85 +2,87 @@
     ViewData["Title"] = "Food Journal";
 }
 <link rel="stylesheet" href="~/css/foodJournal.css"/>
-<script src="~/js/foodJournal.js"></script>
+<script src="~/js/foodJournal.js" defer></script>
 
 <header>
     <h2>Mein Food Journal</h2>
 </header>
-<div class="flex-container">
-    <div class="date-container">
-        <button onclick="showPreviousDay()">&#60;</button>
-        <span id="currentDate"></span>
-        <button onclick="showNextDay()">&#62;</button>
-    </div>
-
-    <div id="test" class="section">
-        <div class="arrow-container" onclick="toggleInput()">
-            <span class="arrow" id="addFoodButtonArrow"> &gt; </span>
-            <span>Nahrungsmittel hinzufügen</span>
+<body>
+    <div class="flex-container">
+        <div class="date-container">
+            <button onclick="showPreviousDay()">&#60;</button>
+            <span id="currentDate"></span>
+            <button onclick="showNextDay()">&#62;</button>
         </div>
-        <div id="foodInputContainer" class="input-container">
-            <div class="inputFood">
-                <label for="foodName">Wie lautet der Name des Essens?</label>
-                <input type="text" id="foodName">
+
+        <div id="test" class="section">
+            <div class="arrow-container" onclick="toggleInput()">
+                <span class="arrow" id="addFoodButtonArrow"> &gt; </span>
+                <span>Nahrungsmittel hinzufügen</span>
             </div>
-            <div class="inputFood">
-                <label for="mealType">Um Welche Mahlzeit handelt es sich?</label>
-                <select id="mealType">
-                    <option value="Frühstück">Frühstück</option>
-                    <option value="Mittagessen">Mittagessen</option>
-                    <option value="Abendessen">Abendessen</option>
-                    <option value="Snacks">Snacks</option>
-                </select>
+            <div id="foodInputContainer" class="input-container">
+                <div class="inputFood">
+                    <label for="foodName">Wie lautet der Name des Essens?</label>
+                    <input type="text" id="foodName">
+                </div>
+                <div class="inputFood">
+                    <label for="mealType">Um Welche Mahlzeit handelt es sich?</label>
+                    <select id="mealType">
+                        <option value="Frühstück">Frühstück</option>
+                        <option value="Mittagessen">Mittagessen</option>
+                        <option value="Abendessen">Abendessen</option>
+                        <option value="Snacks">Snacks</option>
+                    </select>
+                </div>
+                <div class="inputFood">
+                    <label for="foodPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g/100ml)?</label>
+                    <input type="text" id="foodPortionSize" placeholder="Portionsgröße">
+                </div>
+                <div class="inputNutrients">
+                    <p class="nutrients">Nährwerte vom Frühstücks pro 100g/100ml:</p>
+                    <label for="foodKcal">Kcal:</label>
+                    <input type="text" id="foodKcal" placeholder="Kcal">
+                    <label for="foodFat">Fette:</label>
+                    <input type="text" id="foodFat" placeholder="Fette">
+                    <label for="foodCarbs">Kohlenhydrate:</label>
+                    <input type="text" id="foodCarbs" placeholder="Kohlenhydrate">
+                    <label for="foodProtein">Proteine:</label>
+                    <input type="text" id="foodProtein" placeholder="Proteine">
+                </div>
+                <button class="addFoodBtn" onclick="addFood()">Hinzufügen</button>
             </div>
-            <div class="inputFood">
-                <label for="foodPortionSize">Wie viel haben Sie gegessen (1 Portion entspricht 100g/100ml)?</label>
-                <input type="text" id="foodPortionSize" placeholder="Portionsgröße">
+        </div>
+
+        <div id="breakfast" class="section">
+            <h3>Frühstück</h3>
+            <ul id="FrühstückListe" class="foodList"></ul>
+            <div class="arrow-container" onclick="toggleInput('Frühstück')">
+                <span>Frühstück hinzufügen</span>
             </div>
-            <div class="inputNutrients">
-                <p class="nutrients">Nährwerte vom Frühstücks pro 100g/100ml:</p>
-                <label for="foodKcal">Kcal:</label>
-                <input type="text" id="foodKcal" placeholder="Kcal">
-                <label for="foodFat">Fette:</label>
-                <input type="text" id="foodFat" placeholder="Fette">
-                <label for="foodCarbs">Kohlenhydrate:</label>
-                <input type="text" id="foodCarbs" placeholder="Kohlenhydrate">
-                <label for="foodProtein">Proteine:</label>
-                <input type="text" id="foodProtein" placeholder="Proteine">
+        </div>
+
+        <div id="lunch" class="section">
+            <h3>Mittagessen</h3>
+            <ul id="MittagessenListe" class="foodList"></ul>
+            <div class="arrow-container" onclick="toggleInput('Mittagessen')">
+                <span>Mittagessen hinzufügen</span>
             </div>
-            <button class="addFoodBtn" onclick="addFood()">Hinzufügen</button>
         </div>
-    </div>
 
-    <div id="breakfast" class="section">
-        <h3>Frühstück</h3>
-        <ul id="FrühstückListe" class="foodList"></ul>
-        <div class="arrow-container" onclick="toggleInput('Frühstück')">
-            <span>Frühstück hinzufügen</span>
+        <div id="dinner" class="section">
+            <h3>Abendessen</h3>
+            <ul id="AbendessenListe" class="foodList"></ul>
+            <div class="arrow-container" onclick="toggleInput('Abendessen')">
+                <span>Abendessen hinzufügen</span>
+            </div>
         </div>
-    </div>
 
-    <div id="lunch" class="section">
-        <h3>Mittagessen</h3>
-        <ul id="MittagessenListe" class="foodList"></ul>
-        <div class="arrow-container" onclick="toggleInput('Mittagessen')">
-            <span>Mittagessen hinzufügen</span>
+        <div id="snacks" class="section">
+            <h3>Snacks</h3>
+            <ul id="SnacksListe" class="foodList"></ul>
+            <div class="arrow-container" onclick="toggleInput('Snacks')">
+                <span>Snack hinzufügen</span>
+            </div>
         </div>
     </div>
-
-    <div id="dinner" class="section">
-        <h3>Abendessen</h3>
-        <ul id="AbendessenListe" class="foodList"></ul>
-        <div class="arrow-container" onclick="toggleInput('Abendessen')">
-            <span>Abendessen hinzufügen</span>
-        </div>
-    </div>
-
-    <div id="snacks" class="section">
-        <h3>Snacks</h3>
-        <ul id="SnacksListe" class="foodList"></ul>
-        <div class="arrow-container" onclick="toggleInput('Snacks')">
-            <span>Snack hinzufügen</span>
-        </div>
-    </div>
-</div>
+</body>

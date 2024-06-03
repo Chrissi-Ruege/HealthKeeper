@@ -12,7 +12,7 @@ public class LoginController : Controller
         _ctx = ctx;
     }
 
-    public ActionResult Index()
+    public IActionResult Index()
     {
         return View();
     }

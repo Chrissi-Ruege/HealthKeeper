@@ -74,12 +74,12 @@ function addFood() {
         const calculatedCarbs = portionSize * carbs;
         const calculatedProtein = portionSize * protein;
 
-        const minimumKcal = (calculatedFat * 9 + calculatedCarbs * 4 + calculatedProtein * 4);
-        if (minimumKcal <= calculatedKcal) {
+        const Kcal = (calculatedFat * 9 + calculatedCarbs * 4 + calculatedProtein * 4);
+        if (Kcal >= calculatedKcal * 0.95 && Kcal <= calculatedKcal * 1.05) {
             createListItem(mealType, name, calculatedPortion, calculatedKcal, calculatedFat, calculatedCarbs, calculatedProtein);
             clearInputContainer();
         } else {
-            alert('Die Summe der Kalorien aus Fetten, Kohlenhydraten und Proteinen überschreitet die angegebenen Kalorien pro 100g/100ml.');
+            alert('Die Summe der Kalorien aus Fetten, Kohlenhydraten und Proteinen stimme nicht mit den angegebenen Kalorien pro 100g/100ml überein.');
         }
     } else {
         alert('Bitte geben Sie nur gültige Werte ein.');

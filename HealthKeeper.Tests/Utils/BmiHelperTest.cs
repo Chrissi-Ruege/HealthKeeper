@@ -1,6 +1,4 @@
-﻿using HealthKeeper.Controllers;
-using HealthKeeper.Utils;
-using Moq;
+﻿using HealthKeeper.Utils;
 
 namespace HealthKeeper.Tests.Utils;
 

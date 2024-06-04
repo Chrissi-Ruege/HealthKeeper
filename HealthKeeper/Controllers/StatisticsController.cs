@@ -10,12 +10,11 @@ namespace HealthKeeper.Controllers;
 [Route("[controller]")]
 public class StatisticsController : Controller
 {
+    private const double MinWeight = 0;
+    private const double MaxWeight = 300;
 
-    private const double MIN_WEIGHT = 0;
-    private const double MAX_WEIGHT = 300;
-
-    private const double MIN_HEIGHT = 0.5;
-    private const double MAX_HEIGHT = 2.5;
+    private const double MinHeight = 0.5;
+    private const double MaxHeight = 2.5;
 
     private readonly DatabaseContext _ctx;
 
@@ -47,21 +46,16 @@ public class StatisticsController : Controller
     [HttpPost]
     public async Task<IActionResult> AddEntry(IdentityUser user, [FromBody] PostStatisticEntry body)
     {
-        double weight = body.Weight;
+        var weight = body.Weight;
 
         // Validate weight input
-        if (weight <= MIN_WEIGHT || weight >= MAX_WEIGHT)
+        if (weight <= MinWeight || weight >= MaxWeight)
         {
-            return BadRequest($"The provided weight needs to be in range {MIN_WEIGHT}-{MAX_WEIGHT}.");
+            return BadRequest($"The provided weight needs to be in range {MinWeight}-{MaxWeight}.");
         }
-
-        double? height = body.Height;
 
         // Check if height is provided or try to use last value
-        if (height == null)
-        {
-            height = await GetLastHeight(user);
-        }
+        var height = body.Height ?? await GetLastHeight(user);
 
         // Check if a height could be determined.
         if (height == null)
@@ -70,9 +64,9 @@ public class StatisticsController : Controller
         }
 
         // Validate height input
-        if (height <= MIN_HEIGHT || height >= MAX_HEIGHT)
+        if (height <= MinHeight || height >= MaxHeight)
         {
-            return BadRequest($"The provided height needs to be in range {MIN_HEIGHT}-{MAX_WEIGHT}");
+            return BadRequest($"The provided height needs to be in range {MinHeight}-{MaxWeight}");
         }
 
         var entry = new StatisticEntry()
@@ -80,7 +74,7 @@ public class StatisticsController : Controller
             UserId = user.Id,
             Timestamp = DateTime.UtcNow,
             Weight = weight,
-            Height = height ?? 0.0
+            Height = (double)height
         };
 
         _ctx.StatsEntries.Add(entry);
@@ -96,13 +90,13 @@ public class StatisticsController : Controller
 
     private async Task<StatisticEntry?> GetLatestEntry(IdentityUser user)
     {
-        return  _ctx.StatsEntries
+        return await _ctx.StatsEntries
             .Where(x => x.UserId == user.Id)
             .OrderBy(x => x.Timestamp)
-            .FirstOrDefault();
+            .FirstOrDefaultAsync();
     }
 
-    public record PostStatisticEntry(double Weight, double Height);
+    public record PostStatisticEntry(double Weight, double? Height);
 
     public record GetStatisticEntry(double Weight, double Height, double Bmi, string Category);
 }

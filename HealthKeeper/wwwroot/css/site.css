@@ -17,3 +17,10 @@ body {
   margin-bottom: 60px;
   font-family: Arial;
 }
+
+.button {
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgba(161, 160, 255, 0.331);
+  padding: 5px ;
+}

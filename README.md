@@ -1,4 +1,5 @@
-# HealthKeeper
+# HealthKeeper 
+[![.NET](https://github.com/Chrissi-Ruege/HealthKeeper/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Chrissi-Ruege/HealthKeeper/actions/workflows/dotnet.yml)
 A Web App for Health and Fitness
 
 ## Blog

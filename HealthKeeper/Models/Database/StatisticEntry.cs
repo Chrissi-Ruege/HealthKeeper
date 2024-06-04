@@ -8,5 +8,5 @@ public class StatisticEntry
     public float Weight { get; set; }
     public float Height { get; set; }
 
-    public virtual User User { get; set; }
+    public virtual User? User { get; set; }
 }

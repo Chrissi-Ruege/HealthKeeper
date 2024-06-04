@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthKeeper", "HealthKeeper\HealthKeeper.csproj", "{A2908C08-4A81-43F0-84A5-CA8F3E106BCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthKeeper.Tests", "HealthKeeper.Tests\HealthKeeper.Tests.csproj", "{FA75E5E7-A584-4B38-84B4-1ECE57E1E84A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A2908C08-4A81-43F0-84A5-CA8F3E106BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2908C08-4A81-43F0-84A5-CA8F3E106BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2908C08-4A81-43F0-84A5-CA8F3E106BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA75E5E7-A584-4B38-84B4-1ECE57E1E84A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA75E5E7-A584-4B38-84B4-1ECE57E1E84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA75E5E7-A584-4B38-84B4-1ECE57E1E84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA75E5E7-A584-4B38-84B4-1ECE57E1E84A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

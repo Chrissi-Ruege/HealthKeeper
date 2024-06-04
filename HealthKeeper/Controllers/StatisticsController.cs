@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace HealthKeeper.Controllers;
 
-[Authorize]
+[AllowAnonymous]
 [Route("[controller]")]
 public class StatisticsController : Controller
 {

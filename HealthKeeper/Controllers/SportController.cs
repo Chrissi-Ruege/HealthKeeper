@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace HealthKeeper.Controllers;
 
-[Authorize]
+[AllowAnonymous]
 [Route("[controller]")]
 public class SportController : Controller
 {

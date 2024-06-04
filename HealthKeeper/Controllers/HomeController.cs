@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace HealthKeeper.Controllers;
 
+[Authorize]
 [Route("[controller]")]
 public class HomeController : Controller
 {

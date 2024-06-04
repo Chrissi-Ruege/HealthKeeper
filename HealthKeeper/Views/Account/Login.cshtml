@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="divlogin">
+    <div class="login-container">
+        <form class="login-form">
+            <h2 class="center">Login</h2>
+            <div class="input-grouplogin">
+                <label class="labellogin" for="username">Username:</label>
+                <input class="inputlogin" type="text" id="username" name="username" required>
+            </div>
+            <div class="input-grouplogin">
+                <label class="labellogin" for="password">Password:</label>
+                <input class="inputlogin" type="password" id="password" name="password" required>
+            </div>
+            <button class="buttonlogin" type="submit">Login</button>
+            <a class="a_extra" asp-controller="Account" asp-action="Register">Dont't have an account yet? Create new</a>
+        </form>
+    </div>
+</div>
+
+

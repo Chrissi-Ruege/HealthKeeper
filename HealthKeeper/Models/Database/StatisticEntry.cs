@@ -9,5 +9,6 @@ public class StatisticEntry
     public DateTime Timestamp { get; set; }
     public double Weight { get; set; }
     public double Height { get; set; }
+    
     public virtual IdentityUser? User { get; set; }
 }

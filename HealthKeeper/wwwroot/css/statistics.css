@@ -4,7 +4,7 @@ body {
 }
 
 .bmicalc {
-    border-radius: 20px;
+    border-radius: 5px;
     width: max-content;
 }
 
@@ -17,16 +17,15 @@ body {
     font-size: 22px;
 }
 
-.bmiinput {
-    border-radius: 8px;
-    font-size: 20px;
+input {
+    border-radius: 5px;
 }
 
-.bmibutton {
-    font-size: 20px;
-    border-radius: 5px;
-    background-color: rgba(161, 160, 255, 0.331);
+input.button {
+    width: auto;
     padding: 5px;
+    margin: 0px;
+    display: inline-block;
 }
 
 .bw {
@@ -41,10 +40,6 @@ body {
     margin-top: 0px;
 }
 
-.bmi {
-    font-size: 20px;
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr; 
@@ -53,6 +48,7 @@ body {
     height: 100vh;
     padding: 25px;
     box-sizing: border-box;
+    background-color: #fff;
 }
 
 .left {

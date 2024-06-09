@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 namespace HealthKeeper.Controllers;
 
-[AllowAnonymous]
+[Authorize]
 [Route("[controller]")]
 public class CalenderController : Controller
 {

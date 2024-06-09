@@ -2,10 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using HealthKeeper.Models;
 using Microsoft.AspNetCore.Authorization;
+using HealthKeeper.Models.Views;
 
 namespace HealthKeeper.Controllers;
 
-[AllowAnonymous]
+[Authorize]
 [Route("[controller]")]
 public class HomeController : Controller
 {
@@ -25,6 +26,6 @@ public class HomeController : Controller
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View(new ErrorViewModel { Error = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }

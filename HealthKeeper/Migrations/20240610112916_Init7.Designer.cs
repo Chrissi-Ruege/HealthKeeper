@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HealthKeeper.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20240609193350_Added calendar2")]
-    partial class Addedcalendar2
+    [Migration("20240610112916_Init7")]
+    partial class Init7
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,9 +45,11 @@ namespace HealthKeeper.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("CalendarEntries");
                 });
@@ -312,6 +314,15 @@ namespace HealthKeeper.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("HealthKeeper.Models.Database.CalendarEntry", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("HealthKeeper.Models.Database.FoodJournalEntry", b =>

@@ -25,4 +25,8 @@
     <_ContentIncludedByDefault Remove="Views\Login\Index.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

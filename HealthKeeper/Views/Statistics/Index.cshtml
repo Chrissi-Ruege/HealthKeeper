@@ -1,7 +1,7 @@
 <script src="HealthKeeper\wwwroot\js\statistics.js"></script>
-<link rel="stylesheet" href="~/css/statistics.css"/>
+<link rel="stylesheet" href="~/css/statistics.css" />
 
-@model ErrorViewModel
+@model StatisticModel
 
 <div class="grid-container">
 
@@ -24,6 +24,36 @@
         }
     </div>
     <div class="right">
-        <canvas id="graph"></canvas>
+        <div id="graph">
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <th>Datum</th>
+                    <th>Gewicht (kg)</th>
+                    <th>Größe (cm)</th>
+                    <th>BMI</th>
+                    <th>Kategorie</th>
+                </tr>
+
+                @{
+                    foreach (var s in Model.Statistics)
+                    {
+                        <tr>
+                            <td>@s.Time</td>
+                            <td>@s.Weight.ToString("0")</td>
+                            <td>@s.Height.ToString("0")</td>
+                            <td>@s.Bmi.ToString("#.##")</td>
+                            <td>@s.Category</td>
+                        </tr>
+                    }
+                }
+
+            </table>
+        </div>
     </div>
 </div>

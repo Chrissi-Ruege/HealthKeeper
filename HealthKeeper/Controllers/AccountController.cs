@@ -59,9 +59,11 @@ public class AccountController : Controller
         return View(new ErrorViewModel() { Error = "Modell ist ungültig" });
     }
 
+
     [HttpGet("Login")]
     public ActionResult Login()
     {
+        _signInManager.SignOutAsync();
         var vm = new ErrorViewModel()
         {
         };

@@ -10,6 +10,7 @@ namespace HealthKeeper
 
         public DbSet<StatisticEntry> StatsEntries { get; set; }
         public DbSet<FoodJournalEntry> FoodJournalEntries { get; set; }
+        public DbSet<CalendarEntry> CalendarEntries { get; set; }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options)
         : base(options)

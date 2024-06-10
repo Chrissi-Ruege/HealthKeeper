@@ -27,17 +27,17 @@ public class AccountController : Controller
     {
         if (!ModelState.IsValid)
         {
-            return View(new ErrorViewModel("Ungültiger Status."));
+            return View("Login", new ErrorViewModel("Ungültiger Status."));
         }
 
         var result = await _signInManager.PasswordSignInAsync(form.UserName, form.Password, true, false);
 
-        if (result == Microsoft.AspNetCore.Identity.SignInResult.Success)
+        if (result.Succeeded)
         {
             return Redirect(returnUrl ?? "/");
         }
 
-        return View(new ErrorViewModel("Falscher Nutzername oder Password"));
+        return View("Login", new ErrorViewModel("Falscher Nutzername oder Passwort"));
     }
 
     [HttpPost("Register")]
@@ -53,21 +53,17 @@ public class AccountController : Controller
                 await _signInManager.SignInAsync(user, true);
                 return RedirectToAction("Index", "Home");
             }
-            return View(new ErrorViewModel() { Error = result.Errors.First().Description });
+            return View("Register", new ErrorViewModel() { Error = result.Errors.First().Description });
         }
 
-        return View(new ErrorViewModel() { Error = "Modell ist ungültig" });
+        return View("Register", new ErrorViewModel() { Error = "Modell ist ungültig" });
     }
 
-
     [HttpGet("Login")]
-    public ActionResult Login()
+    public async Task<ActionResult> Login()
     {
-        _signInManager.SignOutAsync();
-        var vm = new ErrorViewModel()
-        {
-        };
-        return View(vm);
+        await _signInManager.SignOutAsync();
+        return View(new ErrorViewModel());
     }
 
     [HttpGet("Register")]

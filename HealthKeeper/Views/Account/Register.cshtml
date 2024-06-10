@@ -1,12 +1,21 @@
 ﻿@{
     ViewData["Title"] = "Register";
 }
+@model ErrorViewModel
+
 <link rel="stylesheet" href="~/css/login.css"/>
 
 <div class="divlogin">
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" asp-controller="Account" asp-action="Register">
+            @Html.AntiForgeryToken()
             <h2 class="center">Registrieren</h2>
+            @{
+                if (Model.ShowError)
+                {
+                    <h2>@Model.Error</h2>
+                }
+            }
             <div class="input-grouplogin">
                 <label class="labellogin" for="username">Username:</label>
                 <input class="inputlogin" type="text" id="username" name="username" required>
@@ -16,10 +25,10 @@
             <div class="input-grouplogin">
                 <label class="labellogin" for="password">Password:</label>
                 <input class="inputlogin" type="password" id="password" name="password" required>
-                <label class="labellogin" for="password">Password wiederholen:</label>
-                <input class="inputlogin" type="password" id="password" name="password" required>
+                <label class="labellogin" for="passwordconfirm">Password wiederholen:</label>
+                <input class="inputlogin" type="password" name="passwordconfirm" required>
             </div>
-            <button class="buttonlogin" type="submit">Registrieren</button>
+            <input class="buttonlogin" type="submit" value="Registrieren"/>
         </form>
     </div>
 </div>

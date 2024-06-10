@@ -24,21 +24,21 @@ public static class BmiHelper
         switch (bmi)
         {
             case < 16.0:
-                return "Severe Thinness";
+                return "starkes Untergewicht";
             case < 17.0:
-                return "Moderate Thinness";
+                return "mäßiges Untergewicht";
             case < 18.5:
-                return "Mild Thinness";
+                return "leichtes Untergewicht";
             case < 25.0:
-                return "Normal";
+                return "Normalgewicht";
             case < 30.0:
-                return "Overweight";
+                return "Präadipositas";
             case < 35.0:
-                return "Obese Class I";
+                return "Adipositas Grad I";
             case < 40.0:
-                return "Obese Class II";
+                return "Adipositas Grad II";
             default:
-                return "Obese Class III";
+                return "Adipositas Grad III";
         }
     }
 }

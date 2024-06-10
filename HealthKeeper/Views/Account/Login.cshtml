@@ -1,21 +1,30 @@
 ﻿@{
     ViewData["Title"] = "Login";
 }
-<link rel="stylesheet" href="~/css/login.css"/>
+@model ErrorViewModel
+
+<link rel="stylesheet" href="~/css/login.css" />
 
 <div class="divlogin">
     <div class="login-container">
-        <form class="login-form">
+        <form class="login-form" asp-action="Login" asp-controller="Account">
+            @Html.AntiForgeryToken()
             <h2 class="center">Login</h2>
+            @{
+                if (Model.ShowError)
+                {
+                    <h2>@Model.Error</h2>
+                }
+            }
             <div class="input-grouplogin">
                 <label class="labellogin" for="username">Username:</label>
-                <input class="inputlogin" type="text" id="username" name="username" required>
+                <input class="inputlogin" type="text" name="username" required>
             </div>
             <div class="input-grouplogin">
                 <label class="labellogin" for="password">Password:</label>
-                <input class="inputlogin" type="password" id="password" name="password" required>
+                <input class="inputlogin" type="password" name="password" required>
             </div>
-            <button class="button" type="submit">Login</button>
+            <input class="button" type="submit" value="Login" />
             <a class="a_extra" asp-controller="Account" asp-action="Register">Don't have an account yet? Create new</a>
         </form>
     </div>

@@ -1,29 +1,59 @@
 <script src="HealthKeeper\wwwroot\js\statistics.js"></script>
-<link rel="stylesheet" href="~/css/statistics.css"/>
+<link rel="stylesheet" href="~/css/statistics.css" />
+
+@model StatisticModel
 
 <div class="grid-container">
+
     <div class="left">
         <div class="bmicalc">
-            <form id="BmiCalculator">
-                <h1 class="answer mnone">BMI-Berechnung:</h1>
+            <form method="post">
+                <h1 class="answer mnone">Eintrag erstellen:</h1>
                 <label class="bmilabel">Größe (cm):</label><br>
-                <input class="bmiinput" type="number" id="height" name="height"><br>
+                <input class="bmiinput" type="number" name="Height"><br>
                 <label class="bmilabel">Gewicht (kg):</label><br>
-                <input class="bmiinput" type="number" id="weight" name="weight"><br><br>
-                <input class="button bw" type="submit" value="BMI berechnen">
-                <h1 class="answer">BMI beträgt:</h1>
-                <input type="text" id="result" name="result" readonly><br>
+                <input class="bmiinput" type="number" name="Weight"><br><br>
+                <input type="submit" class="button bw" value="Eintrag hinzufügen" />
             </form>
         </div>
+        @{
+            if (Model.ShowError)
+            {
+                <h2>@Model.Error</h2>
+            }
+        }
     </div>
     <div class="right">
-        <canvas id="graph"></canvas>
-        <div class="userinputweight">
-            <form id="WeightUserInput">
-                <label class="bmilabel mright">Gewicht eingeben:</label>
-                <input class="bmiinput mright" type="number" id="todaysweight" name="todaysweight">
-                <input class="button" type="submit" value="Speichern">
-            </form>
+        <div id="graph">
+            <style>
+                table, th, td {
+                    border: 1px solid black;
+                }
+            </style>
+
+            <table>
+                <tr>
+                    <th>Datum</th>
+                    <th>Gewicht (kg)</th>
+                    <th>Größe (cm)</th>
+                    <th>BMI</th>
+                    <th>Kategorie</th>
+                </tr>
+
+                @{
+                    foreach (var s in Model.Statistics)
+                    {
+                        <tr>
+                            <td>@s.Time</td>
+                            <td>@s.Weight.ToString("0")</td>
+                            <td>@s.Height.ToString("0")</td>
+                            <td>@s.Bmi.ToString("#.##")</td>
+                            <td>@s.Category</td>
+                        </tr>
+                    }
+                }
+
+            </table>
         </div>
     </div>
 </div>

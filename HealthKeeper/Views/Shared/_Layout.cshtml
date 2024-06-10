@@ -1,12 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - HealthKeeper</title>
-    <link rel="stylesheet" href="~/css/navbar.css"/>
-    <link rel="stylesheet" href="~/css/site.css"/>
+    <link rel="stylesheet" href="~/css/navbar.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 
 <body>
@@ -16,9 +15,8 @@
                 <a asp-controller="Home">HealthKeeper</a>
             </div>
             <ul class="navbar__menu">
-                <li><a asp-controller="Home" asp-action="Index">Dashboard</a></li>
-                <li><a asp-controller="Statistics" asp-action="Index">Statistic</a></li>
-                <li><a asp-controller="Calender" asp-action="Index">Calender</a></li>
+                <li><a asp-controller="Statistics" asp-action="Index">Statistiken</a></li>
+                <li><a asp-controller="Calender" asp-action="Index">Kalender</a></li>
                 <li><a asp-controller="Food" asp-action="Index">Food Journal</a></li>
             </ul>
             <ul class="navbar__icons">
@@ -37,7 +35,7 @@
 
     <footer>
         <div style="text-align: center;">
-            &copy; 2024 - HealthKeeper - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - HealthKeeper
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

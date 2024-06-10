@@ -7,10 +7,16 @@
 				<Configuration>
 					<CodeCoverage>
 						<Functions>
-							<Exclude>
+							<!--<Exclude>
+								<Function>^HealthKeeper\.Views\.</Function>
 								<Function>^HealthKeeper\.Migrations\..*</Function>
-								<Function>^HealthKeeper\.Views\..*</Function>
-							</Exclude>
+							</Exclude>-->
+							<Include>
+								<Function>.*\.Models\..*</Function>
+								<Function>.*\.Views\..*</Function>
+								<Function>.*\.Controllers\..*</Function>
+								<Function>.*\.Utils\..*</Function>
+							</Include>
 						</Functions>
 					</CodeCoverage>
 				</Configuration>

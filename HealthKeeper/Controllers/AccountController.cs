@@ -44,19 +44,26 @@ public class AccountController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Register(RegisterForm form)
     {
-        if (ModelState.IsValid)
+        if (!ModelState.IsValid)
         {
-            var user = new IdentityUser { UserName = form.Username, Email = form.Email };
-            var result = await _userManager.CreateAsync(user, form.Password);
-            if (result.Succeeded)
-            {
-                await _signInManager.SignInAsync(user, true);
-                return RedirectToAction("Index", "Home");
-            }
-            return View("Register", new ErrorViewModel() { Error = result.Errors.First().Description });
+            return View("Register", new ErrorViewModel() { Error = "Model ist ungültig" });
         }
 
-        return View("Register", new ErrorViewModel() { Error = "Modell ist ungültig" });
+        if (form.Password != form.PasswordConfirm)
+        {
+            return View("Register", new ErrorViewModel("Die Passwörter müssen identisch sein."));
+        }
+
+        var user = new IdentityUser { UserName = form.Username, Email = form.Email };
+        var result = await _userManager.CreateAsync(user, form.Password);
+
+        if (result.Succeeded)
+        {
+            await _signInManager.SignInAsync(user, true);
+            return RedirectToAction("Index", "Home");
+        }
+
+        return View("Register", new ErrorViewModel() { Error = result.Errors.First().Description });
     }
 
     [HttpGet("Login")]

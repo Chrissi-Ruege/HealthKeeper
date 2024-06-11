@@ -73,11 +73,11 @@ nextMonthBtn.addEventListener('click', () => {
 saveBtn.addEventListener('click', () => {
     const event = eventInput.value.trim();
     if (event !== '') {
-        alert(`Event "${event}" saved for ${modalDate.textContent}`);
+        alert(`Eintrag "${event}" am ${modalDate.textContent} gespeichert.`);
         eventInput.value = '';
         closeModal();
     } else {
-        alert('Please enter an event.');
+        alert('Bitte gebe ein Event an.');
     }
 });
 

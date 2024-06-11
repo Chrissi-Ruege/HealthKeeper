@@ -1,7 +1,7 @@
 const modal = document.getElementById('modal');
 const modalDate = document.getElementById('modalDate');
 const eventInput = document.getElementById('eventInput');
-const saveBtn = document.getElementById('saveBtn');
+//const saveBtn = document.getElementById('saveBtn');
 const closeBtn = document.querySelector('.close');
 const calendarDays = document.getElementById('calendarDays');
 const prevMonthBtn = document.getElementById('prevMonth');
@@ -14,6 +14,7 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 function openModal(date) {
+    document.getElementById("eventdate").value = date.toDateString()
     modal.style.display = 'block';
     modalDate.textContent = date.toDateString();
 }
@@ -69,7 +70,7 @@ nextMonthBtn.addEventListener('click', () => {
     }
     generateCalendar();
 });
-
+/*
 saveBtn.addEventListener('click', () => {
     const event = eventInput.value.trim();
     if (event !== '') {
@@ -80,7 +81,7 @@ saveBtn.addEventListener('click', () => {
         alert('Bitte gebe ein Event an.');
     }
 });
-
+*/
 closeBtn.addEventListener('click', () => {
     closeModal();
 });

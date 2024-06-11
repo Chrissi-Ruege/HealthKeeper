@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Identity;
-
 namespace HealthKeeper.Models.Database;
 
 public class StatisticEntry

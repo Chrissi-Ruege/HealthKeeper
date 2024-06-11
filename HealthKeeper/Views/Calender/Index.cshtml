@@ -1,37 +1,64 @@
 @{
     ViewData["Title"] = "Kalender";
 }
-<link rel="stylesheet" href="~/css/calender.css"/>
+@model List<PostCalenderEntry>
+<link rel="stylesheet" href="~/css/calender.css" />
 <script src="~/js/calender.js" defer></script>
 
 <body>
-  <div class="calendar">
-    <div class="header">
-      <button class="button" id="prevMonth">&#8249;</button>
-      <h2 id="monthYear"></h2>
-      <button class="button" id="nextMonth">&#8250;</button>
+    <div class="calendar">
+        <div class="header">
+            <button class="button" id="prevMonth">&#8249;</button>
+            <h2 id="monthYear"></h2>
+            <button class="button" id="nextMonth">&#8250;</button>
+        </div>
+        <div class="weekdays">
+            <div>So</div>
+            <div>Mo</div>
+            <div>Di</div>
+            <div>Mi</div>
+            <div>Do</div>
+            <div>Fr</div>
+            <div>Sa</div>
+        </div>
+        <div class="days" id="calendarDays"></div>
     </div>
-    <div class="weekdays">
-      <div>So</div>
-      <div>Mo</div>
-      <div>Di</div>
-      <div>Mi</div>
-      <div>Do</div>
-      <div>Fr</div>
-      <div>Sa</div>
-    </div>
-    <div class="days" id="calendarDays"></div>
-  </div>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h3 class="labelcalender" id="modalDate"></h3>
-      <input class="inputcalender" type="text" id="eventInput" placeholder="Eintrag eingeben">
-      <button class="button" id="saveBtn">Speichern</button>
-    </div>
-  </div>
+    <div class="calendar">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
 
-  <script src="script.js"></script>
+        <table>
+            <tr>
+                <th>Datum</th>
+                <th>Name</th>
+            </tr>
+
+            @{
+                foreach (var s in Model)
+                {
+                    <tr>
+                        <td>@s.Date</td>
+                        <td>@s.Name</td>
+                    </tr>
+                }
+            }
+        </table>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form method="post">
+                <h3 class="labelcalender" id="modalDate"></h3>
+                <input class="inputcalender" type="text" name="Date" id="eventdate" readonly/>
+                <input class="inputcalender" type="text" name="Name" placeholder="Eintrag eingeben">
+                <input class="button" type="submit" value="Speichern" />
+            </form>
+        </div>
+    </div>
 </body>
 

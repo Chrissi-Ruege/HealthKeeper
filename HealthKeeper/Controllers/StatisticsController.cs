@@ -13,11 +13,6 @@ namespace HealthKeeper.Controllers;
 [Route("[controller]")]
 public class StatisticsController : Controller
 {
-    private const double MinWeight = 0;
-    private const double MaxWeight = 300;
-
-    private const double MinHeight = 60;
-    private const double MaxHeight = 300;
 
     private readonly DatabaseContext _ctx;
 
@@ -53,34 +48,15 @@ public class StatisticsController : Controller
     public async Task<IActionResult> Index(PostStatisticEntry body, IdentityUser user)
     {
         var weight = body.Weight;
-
-        // Validate weight input
-        if (weight <= MinWeight || weight >= MaxWeight)
-        {
-            return View(new StatisticModel($"Das angegebene Gewicht muss im Bereich von {MinWeight}kg bis {MaxWeight}kg liegen.")
-            {
-                Statistics = await GetEntries(user, 100)
-            });
-        }
-
-        // Check if height is provided or try to use last value
         var height = body.Height ?? await GetLastHeight(user);
 
-        // Check if a height could be determined.
-        if (height == null)
-        {
-            return View(new StatisticModel("Die Größe muss angegeben werden.")
-            {
-                Statistics = await GetEntries(user, 100)
-            });
-        }
-
         // Validate height input
-        if (height <= MinHeight || height >= MaxHeight)
+        var validator = StatisticValidator.Validate(weight, height);
+     
+        if (validator.Item1)
         {
-            return View(new StatisticModel($"Die angegebene Größe muss im Bereich von {MinHeight}cm bis {MaxHeight}cm liegen.")
+            return View(new StatisticModel(validator.Item2)
             {
-
                 Statistics = await GetEntries(user, 100)
             });
         }

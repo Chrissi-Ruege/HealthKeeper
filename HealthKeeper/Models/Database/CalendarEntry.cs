@@ -10,6 +10,6 @@ namespace HealthKeeper.Models.Database
         public required string Name { get; set; }
         public required string Description { get; set; }
 
-        public virtual required IdentityUser User { get; set; }
+        public virtual IdentityUser? User { get; set; }
     }
 }

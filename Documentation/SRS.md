@@ -70,7 +70,7 @@ Tech Stack verwendet:
 
 * ASP.NET
 * EntityFramework-Core
-* NUnit / Mooq
+* NUnit / Moq
 * JIRA
 * GitHub Actions
 * HTML / CSS / JavaScript

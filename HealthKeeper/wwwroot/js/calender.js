@@ -14,9 +14,9 @@ let currentMonth = currentDate.getMonth();
 let currentYear = currentDate.getFullYear();
 
 function openModal(date) {
-    document.getElementById("eventdate").value = date.toDateString()
+    document.getElementById("eventdate").value = date.toLocaleString("de-DE")
     modal.style.display = 'block';
-    modalDate.textContent = date.toDateString();
+    modalDate.textContent = date.toLocaleString("de-DE");
 }
 
 function closeModal() {

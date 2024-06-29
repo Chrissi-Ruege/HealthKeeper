@@ -50,10 +50,10 @@ Geplante Teilbereiche des Projekts sind:
 
 ### 2.1 Beschreibung
 
-Unsere Software ist eine ganzheitliche Gesundheits- und Fitness-Plattform, die es den Benutzern ermöglicht, ihre
-Gesundheits- und Fitnessziele zu erreichen, indem sie umfassende Werkzeuge und Informationen bietet. Unsere Mission ist
-es, Menschen dabei zu unterstützen, ein gesünderes Leben zu führen, ihr Gewicht zu managen und ihre Fitnessziele zu
-erreichen. Benutzer können Gewicht und BMI verfolgen, ein Ernährungstagebuch führen, die Wasserzufuhr überwachen,
+Unsere Software soll eine ganzheitliche Gesundheits- und Fitness-Plattform werden. Diese soll es Benutzern ermöglichen, ihre
+Gesundheits- und Fitnessziele zu erreichen, indem sie umfassende Werkzeuge und Informationen bietet. Menschen sollen unterstützt werden, 
+ein gesünderes Leben zu führen, ihr Gewicht zu überwachen und auf ihre Fitness zu achten. 
+Benutzer können Gewicht und BMI verfolgen, ein Ernährungstagebuch führen, die Wasserzufuhr überwachen,
 Sportaktivitäten aufzeichnen und individuelle Gewichtsziele setzen. Die App liefert maßgeschneiderte Empfehlungen
 basierend auf Fortschritten und erinnert an geplante sportliche Aktivitäten. Selbstverwaltung und Verbesserung der
 Gesundheit stehen im Mittelpunkt unserer Software. Unser Ziel ist es, die Gesundheit und das Wohlbefinden der Benutzer
@@ -70,11 +70,12 @@ Tech Stack verwendet:
 
 * ASP.NET
 * EntityFramework-Core
+* NUnit / Mooq
 * JIRA
 * GitHub Actions
 * HTML / CSS / JavaScript
 
-Als VCS wird GitHub Repository verwendet.
+Zur Versionskontrolle wird GitHub verwendet.
 
 ## 3. Anforderungen
 
@@ -133,11 +134,12 @@ kann. Dazu zählen ebenfalls Probleme mit den Funktionen des HealthKeeper’s. W
 dabei zum Beispiel lange Ladezeiten der Web-App.
 
 ### 3.4 Performance
+Da dieses Projekt keinen Production-State erreichen wird und vorallem Lokal getestet wird, ist die Performance nicht ganz so wichtig.
 
 #### 3.4.1 Antwortzeit
 
 Um den HealthKeeper so Benutzerfreundlich wie möglich zu halten, soll die Performance sowie die Ladezeiten so gut wie
-möglich sein.
+möglich sein. Auf komplexe Optimierungen wird allerdings verzichtet.
 
 #### 3.4.2 Capacity
 
@@ -145,14 +147,14 @@ Es soll keine Limits bei der Anzahl an Benutzern geben, welche den HealthKeeper 
 
 #### 3.4.3 Speicher
 
-Da es sich um eine Web-App handelt, wird damit kaum Speicher auf den Endgeräten der Benutzer benötigt.
-Da die Anwendung keine großen Datenmengen verarbeitet, benötigt das Backend auch nur wenig Speicher. (Wahrscheinlich <
-5GB)
+Abgesehen von Browsercaches und Cookies wird auf den Geräten der Benutzer kein Speicher allokiert. 
+Die Anwendung selbst wird im Backend keine großen Datenmengen verarbeiten, dadurch benötigt das Backend auch nur wenig Speicher.
+Mit Datenbank und .NET Runtime sollten weniger als 2-3GB anfallen.
 
 ### 3.5 Supportability
 
-Beim Entwickeln des HealthKeeper’s wird auf die weitverbreiteten Grundlagen des Codings geachtet, um den Code
-übersichtlich zu halten und die Weiterentwicklung so einfach wie möglich zu gestalten.
+Der Code soll grundsätzlichen Standards der Programmierung folgen. 
+Um eine einfache Weiterentlickung zu ermöglichen soll, der Code übersichtlich gehalten werden.
 
 ### 3.6 Designvorgaben
 

@@ -1,7 +1,8 @@
 # Architecture Significant Requirements Document
 
 ## 1. Einleitung
-TODO 
+In diesem Dokument befindet sich unser Utility Tree sowie eine Übersicht zu unseren Architektur Entscheidungen.
+
 ## 2. Utility Tree
 Der Utility Tree vergleicht den Nutzen mit dem technischen Aufwand einer Funktion der Software. 
 Die Werte werden durch Niedrig (⭐) Mittel (⭐⭐) und Hoch (⭐⭐⭐) repräsentiert.
@@ -19,3 +20,10 @@ Die Werte werden durch Niedrig (⭐) Mittel (⭐⭐) und Hoch (⭐⭐⭐) reprä
 | Funktionalität         | Verschiedene Funktionen                     | Die App soll viele verschiedene Funktionen zur Verfügung stellen                      | ⭐⭐⭐            | ⭐⭐⭐            |
 
 ## 3. Architektur Entscheidungen
+
+### 3.1 Backend
+ASP.NET dient als Grundlage für unsere Client-Server Anwendung.
+Das Entity Framework Core erleichtert den Zugriff auf die Datenbank.
+
+### 3.2 Frontend
+Für das Frontend verwenden wir HTML, CSS und JavaScript. 

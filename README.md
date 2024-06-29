@@ -23,3 +23,4 @@ Die Dokumentation der Anwendung befindet sich im "Documentation/" Ordner des Rep
 4. Reflexion/Review
    - [Technical-Review](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/TechnicalReview.md)
    - [Reflexion](https://github.com/Chrissi-Ruege/HealthKeeper/discussions/35)
+5. [Privates JIRA-Board](https://healthkeeper22b5.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiYWM5NDVlNzYwNDhlNDA2MmFlODA2NWRlZWYzZGNkMzEiLCJwIjoiaiJ9) 

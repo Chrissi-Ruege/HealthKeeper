@@ -26,9 +26,11 @@ Auf tiefgreifendere automatisierte Tests wird aus Aufwandsgründen zunächst ver
 
 ### 2.3 Code Coverage Tool
 Code Coverage Reports können mit der Microsoft .NET CLI automatisch im Cobertura Format erzeugt werden.
-Um aus der Cobertura XML eine schöne Übersicht zu generieren wird der [ReportGenerator](https://github.com/danielpalme/ReportGenerator) verwendet.<br>
-Bild des generierten Reports:<br>
-![image](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/2697026c-dce7-4851-9ccb-40abe205ce29)
+Um aus der Cobertura XML eine schöne Übersicht zu generieren wird der [ReportGenerator](https://github.com/danielpalme/ReportGenerator) verwendet.
+
+| ![image](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/2697026c-dce7-4851-9ccb-40abe205ce29) | 
+|:--:| 
+| *Generierter Coverage-Report* |
 
 ## 3. Zielwerte
 Wir streben mit etwa 50 % eine recht geringe Testabdeckung an.
@@ -37,6 +39,10 @@ Dies liegt vor allem daran, dass unsere Codebase zu einem großen Teil aus Front
 ## 4. Struktur
 Die Tests befinden sich in dem getrennten "HealthKeeper.Tests" Projekt. 
 Für jede Klasse die getestet wird, wird eine eigene Test Datei "[Klasse]Test.cs" erstellt in welcher sich die verschiedenen Test-Cases befinden.
+
+| ![image](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/e6f3c14a-e31b-41b9-b5d9-c9f428483317) | 
+|:--:| 
+| *Test-Projekt Struktur* |
 
 ## 5. Ausführung
 Sämtliche Tests sollen jeweils beim Kompilieren der Anwendung sowie beim Ausführen der CI/CD Pipeline ausgeführt werden.

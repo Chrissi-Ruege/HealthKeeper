@@ -16,6 +16,7 @@ Die Dokumentation der Anwendung befindet sich im "Documentation/" Ordner des Rep
     - [Abschlusspräsentation Handout](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/Presentation/Handout%20Softw_Eng.pdf)
 2. Projektplanung
     - [SRS](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/SRS.md)
+    - [SAD](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/SAD.md)
     - [ASR](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/ASR.md)
     - [UCRS Login](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/UCRS-Login.md)
     - [UCRS Change Password](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/UCRS-Reset-password.md)

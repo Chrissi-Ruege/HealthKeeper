@@ -21,11 +21,12 @@ Die Dokumentation der Anwendung befindet sich im "Documentation/" Ordner des Rep
     - [UCRS Login](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/UCRS-Login.md)
     - [UCRS Change Password](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/UCRS-Reset-password.md)
     - [RMMM](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/RMMM.md)
-4. Umsetzung
-	 - [CI/CD](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/CI-CD.md)
+4. Qualitätsbericht
    - [Refactoring](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/FoodJournalRefactoring.md)
    - [Testplan](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/Testplan.md)
-5. Reflexion/Review
    - [Technical-Review](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/TechnicalReview.md)
-   - [Reflexion](https://github.com/Chrissi-Ruege/HealthKeeper/discussions/35)
-6. [Privates JIRA-Board](https://healthkeeper22b5.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiYWM5NDVlNzYwNDhlNDA2MmFlODA2NWRlZWYzZGNkMzEiLCJwIjoiaiJ9) 
+   - [Metriken](https://github.com/Chrissi-Ruege/HealthKeeper/discussions/29)
+   - [CI/CD](https://github.com/Chrissi-Ruege/HealthKeeper/blob/main/Documentation/CI-CD.md)
+6. Reflexion
+   - [Retroperspektive](https://github.com/Chrissi-Ruege/HealthKeeper/discussions/35)
+7. [Privates JIRA-Board](https://healthkeeper22b5.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiYWM5NDVlNzYwNDhlNDA2MmFlODA2NWRlZWYzZGNkMzEiLCJwIjoiaiJ9) 

@@ -20,8 +20,9 @@ Das Backend validiert daraufhin die eingegebenen Daten. Bei falscher Eingabe wir
 
 ### 2.2 Aktivitätsdiagramm
 
-![login-activity](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/1a238697-1e4d-493d-be92-4a9cff365583)
+![act drawio](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/0b8da801-337f-4486-b1cf-11c4e5fafae1)
 
 ### 2.3 Sequenzdiagramm
 
-![login-sequence](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/c823dcef-24ec-4b88-9e44-b8c3b1fb4527)
+![seq drawio](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/049da03a-82b2-4b33-b93f-a655772e1391)
+

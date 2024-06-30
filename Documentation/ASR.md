@@ -27,3 +27,16 @@ Das Entity Framework Core erleichtert den Zugriff auf die Datenbank.
 
 ### 3.2 Frontend
 Für das Frontend verwenden wir HTML, CSS und JavaScript. 
+
+## 4. Design Patterns
+
+- **Repository Pattern:**
+    - **Zweck:** Für den Datenzugriff und die Trennung der Datenlogik von der Geschäftslogik.
+    - **Implementierung:** Beispielsweise im `DatabaseContext.cs`.
+    - **Vorteile:** Klare Trennung der Zuständigkeiten und verbesserte Wartbarkeit.
+- **Dependency Injection:**
+    - **Zweck:** Zur Entkopplung der Komponenten und zur Verbesserung der Testbarkeit.
+    - **Implementierung:** Beispielsweise im `Program.cs`.
+    - **Vorteile:** Verbesserte Testbarkeit und flexible Konfiguration der Abhängigkeiten.
+
+Durch den Einsatz dieser Design Patterns verbessern wir die Testbarkeit, Wartbarkeit und die klare Trennung der Zuständigkeiten innerhalb unserer Anwendung, was zu einer robusteren und leichter zu wartenden Software führt. Die Kombination dieser Technologien und Muster gewährleistet eine skalierbare, wartbare und effiziente Lösung zur Unterstützung der Gesundheitsziele unserer Benutzer.

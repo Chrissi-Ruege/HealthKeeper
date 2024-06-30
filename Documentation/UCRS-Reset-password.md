@@ -22,8 +22,8 @@ Bei gültiger Eingabe speichert das Backend das neue Passwort.
 
 ### 2.2 Aktivitätsdiagramm
 
-![resetpassword-activity](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/e0728bb7-8bbc-4c53-b669-281d9c5a18ab)
+![reset-pw drawio](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/adce7012-cda9-4b88-8d72-e9a911df8449)
 
 ### 2.3 Sequenzdiagramm
 
-![resetpassword-sequence](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/e822dd6e-27e7-4098-a5dc-a02a22794b72)
+![reset-pw2 drawio](https://github.com/Chrissi-Ruege/HealthKeeper/assets/20227840/8189957d-d8fc-473f-a345-b0744d6c33a4)
